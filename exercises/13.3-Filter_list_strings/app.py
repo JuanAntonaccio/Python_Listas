@@ -7,3 +7,10 @@ names = ['Liam','Emma','Noah','Olivia','William','Ava','James','Isabella','Logan
 
 
 #Your code go here:
+def funcion(dato):
+    if 'am' in dato:
+        return dato
+
+nueva= list(filter(funcion,names))    
+print(nueva)    
+

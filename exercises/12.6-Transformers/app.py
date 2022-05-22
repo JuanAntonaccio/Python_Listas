@@ -7,3 +7,11 @@ incoming_ajax_data = [
 ]
 
 #Your code go here:
+def funcion(elemento):
+	texto=''
+	for k,v in elemento.items():
+		texto=texto+' '+v
+	return texto
+
+lista = list(map(funcion,incoming_ajax_data))	
+print(lista)

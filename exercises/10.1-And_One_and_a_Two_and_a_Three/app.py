@@ -4,4 +4,6 @@ contact = {
     "email": "test@test.com"
 }
 #Your code here:
+for clave,valor in contact.items():
+    print(f'{clave} : {valor}')
 

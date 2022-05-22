@@ -15,6 +15,23 @@ def calculateAge(birthDate):
     age = today.year - birthDate.year - ((today.month, today.day) < (birthDate.month, birthDate.day))
     return age
 
-name_list = list(map(lambda person:  person["name"] , people))
+
+		
+def funcion(name):
+	for i in people:
+		for k,v in i.items():
+			#print(k,v)
+			if k=="name":
+				if name in v:
+					edad = calculateAge(i.get(birthDate))
+					texto=f'Hello, my name is {name} and I am {edad} years old'
+					print(texto)
+					return texto
+		
+		
+
+
+person = lambda name: funcion(name)
+name_list = list(map(funcion , people))
 print(name_list)
 

@@ -12,4 +12,10 @@ tasks = [
 
 
 #Your code go here:
+def funcion(ele):
+	for k,v in ele.items():
+		if k=="done" and v:
+			return ele
+lita_nueva=list(filter(funcion,tasks))
+print (lita_nueva)
 
